@@ -3,6 +3,7 @@ library(mvtnorm)
 library(lemon)
 library(ggplot2)
 library(car)
+library(plyr)
 
 
 #### Set directory to same directory as the r-script
