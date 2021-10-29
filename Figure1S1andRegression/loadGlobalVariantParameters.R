@@ -1,24 +1,10 @@
-library(reshape2)
-library(ggplot2)
-library(dplyr)
-library(stringr)
-library(lubridate)
-library(zoo)
-library(cowplot)
-library(ggpubr)
-library(latex2exp)
-library(doBy)
-library(RColorBrewer)
-library(ggnewscale)
-library(stats)
+packages_needed = c('reshape2','ggplot2','dplyr','stringr','lubridate','zoo','cowplot','ggpubr','latex2exp','doBy','RColorBrewer','ggnewscale','stats')
+#install.packages(packages_needed)
+lapply(packages_needed, require, character.only = TRUE)
 
 codeFolder = './'
 plotFolder = './'
-source('./dropPlot.R')
-source('./plotValueByFactor.R')
-source('./getCensoredMeans.R')
-source('./censoredRegression.R')
-source('./runRegressionsForAllVariants_VariantNeutL.R')
+#source('./runRegressionsForAllVariants_VariantNeutL.R')
 
 pangoNames=c('WT','B.1.1.7','B.1.351','P.1','B.1.617.2','B.1.617.1')
 WHONames=c('Ancestral','Alpha','Beta','Gamma','Delta','Kappa')

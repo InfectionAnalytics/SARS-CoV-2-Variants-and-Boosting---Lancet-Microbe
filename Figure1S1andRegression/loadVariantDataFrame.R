@@ -1,12 +1,6 @@
 baseFolder<-'./'
 codeFolder<-'./'
 
-# load global parameters
-source('./loadGlobalVariantParameters.R')
-#load required functions
-source('./findXVals.R')
-source('./getCensoredMeans.R')
-source('./censoredRegression.R')
 #Load Data
 loadVariantDataFrame <- function() {
 WTdata = read.csv('./variantNeutDataForImport.csv')

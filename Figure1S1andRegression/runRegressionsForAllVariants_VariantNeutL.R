@@ -292,7 +292,7 @@ getDataForRegression<-function(data, keepConvalescent=F, writeData=T){
   requiredVariables = requiredVariables[requiredVariables %in% colnames(regressionData)]
   regressionData = select(regressionData,requiredVariables)
   if (writeData) {
-    write.csv(regressionData, paste0(outputFolder,'newRegressionData_',convString,'.csv'),row.names = F)
+    #write.csv(regressionData, paste0(outputFolder,'newRegressionData_',convString,'.csv'),row.names = F)
   }
   regressionData
 }
